@@ -10,11 +10,38 @@ import CoreNFC
 
 struct ContentView: View {
     @State var data = ""
+    
     var body: some View {
-        VStack {
-            Text(data)
-                .padding()
-            nfcButton(data: self.$data)
+        NavigationView {
+            GeometryReader { reader in
+                VStack(spacing: 30) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(.white)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.gray, lineWidth: 4)
+                            )
+                        Text(data)
+                            .foregroundColor(.black)
+                            .padding()
+                    }.frame(height: reader.size.height * 0.4)
+                    
+                    // Read Button
+                    nfcButton(data: self.$data)
+                        .frame(height: reader.size.height * 0.07)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                    
+                    // Write Button
+                    Spacer()
+                    
+                    
+                }.frame(width: reader.size.width * 0.9)
+                .navigationBarTitle("NFC App", displayMode: .inline)
+                .padding(.top, 20)
+                
+            }
+            
         }
         
     }
@@ -38,7 +65,7 @@ struct nfcButton : UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIButton, context: UIViewRepresentableContext<nfcButton>) {
-        <#code#>
+        // Do nothing
     }
     
     func makeCoordinator() -> nfcButton.Coordinator {
