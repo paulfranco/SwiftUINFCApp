@@ -225,14 +225,6 @@ struct WriteView : View {
             }
         }
         .navigationTitle("NFC Write")
-//        .navigationBarItems(leading: Button(action: {
-//            self.isActive.toggle()
-//        }) {
-//            HStack(spacing: 5) {
-//                Image(systemName: "chevron.left")
-//                Text("back")
-//            }
-//        })
     }
 }
 
