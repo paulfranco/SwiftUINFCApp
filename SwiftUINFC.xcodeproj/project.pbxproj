@@ -11,6 +11,8 @@
 		037CF671261809DB00E0E4C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037CF670261809DB00E0E4C4 /* ContentView.swift */; };
 		037CF673261809DB00E0E4C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037CF672261809DB00E0E4C4 /* Assets.xcassets */; };
 		037CF676261809DB00E0E4C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037CF675261809DB00E0E4C4 /* Preview Assets.xcassets */; };
+		037CF681261AE27100E0E4C4 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037CF680261AE27100E0E4C4 /* Payload.swift */; };
+		037CF684261AE2CB00E0E4C4 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037CF683261AE2CB00E0E4C4 /* WriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		037CF675261809DB00E0E4C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		037CF677261809DB00E0E4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		037CF67E26180A5200E0E4C4 /* SwiftUINFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUINFC.entitlements; sourceTree = "<group>"; };
+		037CF680261AE27100E0E4C4 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
+		037CF683261AE2CB00E0E4C4 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				037CF672261809DB00E0E4C4 /* Assets.xcassets */,
 				037CF677261809DB00E0E4C4 /* Info.plist */,
 				037CF674261809DB00E0E4C4 /* Preview Content */,
+				037CF680261AE27100E0E4C4 /* Payload.swift */,
+				037CF683261AE2CB00E0E4C4 /* WriteView.swift */,
 			);
 			path = SwiftUINFC;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037CF684261AE2CB00E0E4C4 /* WriteView.swift in Sources */,
+				037CF681261AE27100E0E4C4 /* Payload.swift in Sources */,
 				037CF671261809DB00E0E4C4 /* ContentView.swift in Sources */,
 				037CF66F261809DB00E0E4C4 /* SwiftUINFCApp.swift in Sources */,
 			);
